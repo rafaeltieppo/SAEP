@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login TechMan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="listarEquipamentos()">
+    <div class="header">
+        <img src="../Assets/techman.png" alt="">
+        <div class="conteudo">
+            <div class="cadastrarEquipamento" onclick="abrircard()">
+                <p>Novo Equipamento</p>
+            </div>
+            <div class="sair">
+                <img src="../Assets/logout_sair.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="cardcadastro">
+        <p>Cadastro de Equipamento</p>
+        <div class="campos">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="Endereco da imagem">
+            <input type="text" placeholder="Descrição" id="descricao">
+            <div class="buttoncheck">
+                <input type="radio" id="check">
+                <a>Ativo</a>
+            </div>
+            <button onclick="cadastrarEquipamento()">Cadastrar</button>
+            <div class="fechar" onclick="closeModal()">X</div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
